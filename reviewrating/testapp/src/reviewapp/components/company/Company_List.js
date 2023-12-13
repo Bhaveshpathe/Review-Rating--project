@@ -1,9 +1,6 @@
 import React from "react";
 import "./Company_List.css";
 import { Link } from "react-router-dom";
-import img from "../auth/image/Group 1.png";
-import img1 from "../auth/image/man.avif";
-import img2 from "../auth/image/man.avif";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getCompanies } from "../../features/company/CompanySlice";
@@ -44,12 +41,8 @@ function Company_List() {
       </div>
       <hr></hr>
       <div className="Company_list-b">
-        {/* company data */}
-        {/*  <Link className="Company_List" to={`/companydetails/${_id}`}>   */}
         <p>Result found 4</p>
-        
         <div className="Description">
-          {/* console.log(_id , company_logo ,companyName , location ,city ,founded) */}
           {company_data &&
             company_data.map(
               ({ _id, company_logo, companyName, location, city, founded }) => (

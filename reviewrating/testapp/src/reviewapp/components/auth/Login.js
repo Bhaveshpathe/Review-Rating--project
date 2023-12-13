@@ -40,10 +40,10 @@ function Login() {
    password:""
  }
  const validationSchema = yup.object().shape({
-email:yup.string().required().email("please enter your email"),
-password:yup.string().required("please enter your password")
+ email:yup.string().required().email("please enter your email"),
+ password:yup.string().required("please enter your password")
  })
-const handleSubmit =async (values)=> {
+ const handleSubmit =async (values)=> {
  console.log("values",values);
  const result =await dispatch(signInUser(values))
 };

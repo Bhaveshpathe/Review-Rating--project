@@ -100,6 +100,23 @@ const authSlice = createSlice({
     },
   },
   extraReducers: {
+
+     // For SignUp reducers for action send by createAsyncThunk
+     // promises
+     [signUpUser.pending]: (state, { payload }) => {
+      console.log("Loading.....");
+      state.loading = true;
+    },
+    [signUpUser.fulfilled]: (state, { payload }) => {
+      console.log("Signup Done", payload);
+      state.loading = false;
+      state.message = payload.data.message;
+    },
+    [signUpUser.rejected]: (state, { payload }) => {
+      state.loading = false;
+      state.error = payload.error.message;
+    },
+
     // For SignIn reducers for action send by createAsyncThunk
     
     [signInUser.pending]: (state) => {
@@ -131,22 +148,6 @@ const authSlice = createSlice({
       state.loading = false;
       state.error = payload.error.message;
       state.message = "Login Failed";
-    },
-
-    // For SignUp reducers for action send by createAsyncThunk
-     // promises
-    [signUpUser.pending]: (state, { payload }) => {
-      console.log("Loading.....");
-      state.loading = true;
-    },
-    [signUpUser.fulfilled]: (state, { payload }) => {
-      console.log("Signup Done", payload);
-      state.loading = false;
-      state.message = payload.data.message;
-    },
-    [signUpUser.rejected]: (state, { payload }) => {
-      state.loading = false;
-      state.error = payload.error.message;
     },
 
     // For forget password

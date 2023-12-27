@@ -69,3 +69,75 @@
     text-align: center;
     line-height: 30px;
   }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .Login {
+      display: flex;
+      height:110vh;
+      gap:1px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Login .LeftBox{
+      display: flex;
+    }
+    .Login .LeftBox p{
+      width: 100%;
+    } 
+    .Login .LeftBox img{
+      width:100px;
+    }
+    .Login .RightBox{
+      width:100%;
+    }
+    .Login .RightBox .RightBox-a{
+      display: flex;
+      width:100%;
+  }}
+  @media only screen and (max-width: 768px) {
+    .Login {
+      display: flex;
+      gap:1px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Login .LeftBox{
+      display: flex;
+    }
+    .Login .LeftBox p{
+      width: 100%;
+    } 
+    .Login .LeftBox img{
+      width:100px;
+    }
+    .Login .RightBox{
+      width:100%;
+    }
+    .Login .RightBox .RightBox-a{
+      display: flex;
+      width:100%;
+  }}
+  @media only screen and (max-width: 1024px) {
+    .Login {
+      display: flex;
+      height:100vh;
+      gap:1px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Login .LeftBox{
+      display: flex;
+    }
+    .Login .LeftBox p{
+      width: 100%;
+    } 
+    .Login .LeftBox img{
+      width:100px;
+    }
+    .Login .RightBox{
+      width:100%;
+    }
+    .Login .RightBox .RightBox-a{
+      display: flex;
+      width:100%;
+  }}

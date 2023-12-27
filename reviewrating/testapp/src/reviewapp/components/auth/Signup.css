@@ -57,3 +57,77 @@
     text-align: center;
     line-height: 30px;
   }
+  @media only screen and (max-width: 600px) {
+    .Signup {
+      display: flex;
+      height:120vh;
+      gap:1px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Signup .LeftBox{
+      display: flex;
+    }
+    .Signup .LeftBox p{
+      width: 100%;
+    } 
+    .Signup .LeftBox img{
+      width:100px;
+    }
+    .Signup .RightBox{
+      width:100%;
+    }
+    .Signup .RightBox .RightBox-a{
+      display: flex;
+      width:100%;
+  }}
+  @media only screen and (max-width: 768px) {
+    .Signup {
+      display: flex;
+      gap:1px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .Signup .LeftBox{
+      display: flex;
+    }
+    .Signup .LeftBox p{
+      width: 100%;
+    } 
+    .Signup .LeftBox img{
+      width:100px;
+    }
+    .Signup .RightBox{
+      width:100%;
+    }
+    .Signup .RightBox .RightBox-a{
+      display: flex;
+      width:100%;
+  }}
+  @media only screen and (max-width: 1024px) {
+    .Signup {
+      display: flex;
+      height:100vh;
+      justify-content: center;
+      gap:1px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Signup .LeftBox{
+      display: flex;
+    }
+    .Signup .LeftBox p{
+      width: 100%;
+    } 
+    .Signup .LeftBox img{
+      width:100px;
+    }
+    .Signup .RightBox{
+      width:100%;
+    }
+    .Signup .RightBox .RightBox-a{
+      display: flex;
+      width:100%;
+  }}
